@@ -35,4 +35,14 @@
     .topicos__visitados-link {
         font-size: 24px;
     }
+
+    .topicos__visitados-lista {
+        padding: 3em 10vw;  
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos__visitados {
+        padding: 3em 20vw;    
+    }
 }
