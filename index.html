@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,7 +23,7 @@
         <div class="container">
             <input type="checkbox" id="menu" class="container__menu-botao">
             <label for="menu"><!--Ao usar o atributo for, com o valor igual ao id do input, você está associando a label com o input. Dessa maneira, ao clicar na imagem que está dentro dessa label, irá interagir com o checkbox, fazendo essa detecção do clique do usuário.-->
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                <span class="cabecalho__menu-hamburguer container__imagem container__imagem-transparente"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
@@ -43,9 +44,43 @@
                 </li>
             </ul>
             <img class="container__imagem" src="img/Logo.svg" alt="Logo da Alura Books">
+            <h1 class="container__titulo"><b class="container__titulo-negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input class="opcoes__botao" type="checkbox" id="opcoes__menu">
+            <label for="opcoes__menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item">
+                <a class="opcoes__item-link" href="#">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a class="opcoes__item-link" href="#">Minha Estante</a>
+            </li>
+        </ul>
+
         <div class="container">
-            <a class="container__imagem" href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"></a>
+            <a class="container__imagem container__imagem-transparente href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"></a>
             <a class="container__imagem" href="#"><img src="img/Compras.svg" alt="Carrinhos de compras"></a>
             <a class="container__imagem" href="#"><img src="img/Usuário.svg" alt="Meu perfil"></a>
         </div>
@@ -205,8 +240,10 @@
     </section>
 
     <section class="contatos">
-        <h2 class="contatos__titulo">Fique por dentro das novidades!</h2>
-        <p class="contatos__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contatos__descricao">
+            <h2 class="contatos__titulo">Fique por dentro das novidades!</h2>
+            <p class="contatos__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input class="contatos__email" type="email" placeholder="Cadastre seu email">
     </section>
 
@@ -214,6 +251,81 @@
 
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Alura</h2>
+
+        <ul class="lista__rodape">
+            <li class="lista__rodape-titulo">Educação</li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/Caelum.svg" alt="Logo da Caelum">
+                <a class="lista__rodape-link" href="#">Caelum</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/CasaDoCodigo.svg" alt="Logo da Casa do Código">
+                <a class="lista__rodape-link" href="#">Casa do Código</a>
+            </li>
+        </ul>
+        <ul class="lista__rodape">
+            <li class="lista__rodape-titulo">Educação Online</li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/Alura.svg" alt="Logo da Alura">
+                <a class="lista__rodape-link" href="#">Alura</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a class="lista__rodape-link" href="#">Alura Para Empresas</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/AluraLATAM.svg" alt="Logo da Alura LATAM">
+                <a class="lista__rodape-link" href="#">Alura LATAM</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/AluraStart.svg" alt="Logo da Alura Start">
+                <a class="lista__rodape-link" href="#">Alura Start</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/MusicDot.svg" alt="Logo da MusicDot">
+                <a class="lista__rodape-link" href="#">MusicDot</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
+                <a class="lista__rodape-link" href="#">Alura Lingua</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/PM3.svg" alt="Logo da PM3">
+                <a class="lista__rodape-link" href="#">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista__rodape">
+            <li class="lista__rodape-titulo">Comunidade</li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/HipstersTech.svg" alt="Logo da Hipsters Tech">
+                <a class="lista__rodape-link" href="#">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/ScubaDev.svg" alt="Logo da Casa do ScubaDev">
+                <a class="lista__rodape-link" href="#">Scuba Dev</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/LayersTech.svg" alt="Logo da Layers Tech">
+                <a class="lista__rodape-link" href="#">Layers Tech</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/LikeABoss.svg" alt="Logo da Like A Boss">
+                <a class="lista__rodape-link" href="#">Like A Boss</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/CarreiraSemFronteira.svg" alt="Logo da Carreira Sem Fronteira">
+                <a class="lista__rodape-link" href="#">CarreiraSemFronteira</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/HipstersJobs.svg" alt="Logo da Hipsters Jobs">
+                <a class="lista__rodape-link" href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="lista__rodape-item">
+                <img class="lista__rodape-imagem" src="img/GUJ.svg" alt="Logo da GUJ">
+                <a class="lista__rodape-link" href="#">GUJ</a>
+            </li>
+        </ul>
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
